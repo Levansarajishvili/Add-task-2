@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"> </script>
+</head>
+
+<body>
+    <div class="form">
+        <input id="task_name">
+        <input id="task_description">
+        <input id="task_assignee">
+        <select id="task_status">
+            <option value="0">To do</option>
+            <option value="1">In progress</option>
+            <option value="2">Testing</option>
+            <option value="3">Done</option>
+        </select>
+        <button onclick="addTask()">Add task</button>
+    </div>
+
+    <div class="tasks_container">
+        <div class="task_body" id="toDo">
+            <div class="task_title">To do</div>
+            <div class="task_list"></div>
+        </div>
+        <div class="task_body " id="progress">
+            <div class="task_title">In progress</div>
+            <div class="task_list"></div>
+        </div>
+        <div class="task_body " id="testing">
+            <div class="task_title">Testing</div>
+            <div class="task_list"></div>
+        </div>
+        <div class="task_body " id="done">
+            <div class="task_title">Done</div>
+            <div class="task_list"></div>
+        </div>
+    </div>
+
+    <!-- <img src="delete.png"> -->
+
+
+</body>
+
+</html>
